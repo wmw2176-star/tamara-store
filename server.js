@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 });
 
 // إنشاء طلب تمارا
-app.post("/create-order", async (req, res) => {
+app.get("/create-order", async (req, res) => {
   try {
     const response = await axios.post(
       "https://api.tamara.co/checkout",
